@@ -111,21 +111,15 @@ namespace Wk5Ex1Redo
             //declare return value
             double avg = 0;
 
-            //declare counter
-            int count = 0;
-
             //loop through list
             foreach (var grade in grades)
             {
                 //add grade to return variable
                 avg += grade;
-
-                //increase counter
-                count++;
             }
 
             //return average grade
-            return avg/count;
+            return avg/grades.Count;
         }
 
         //method to find highest and lowest grade
